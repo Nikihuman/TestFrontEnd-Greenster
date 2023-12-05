@@ -1,0 +1,65 @@
+@import '../../index.module.scss';
+
+.login-form{
+	width: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+	box-shadow: 3px 12px 24px 0px rgba(129, 137, 197, 0.20);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap:20px;
+	div {
+		color: $gray;
+	}
+	margin-bottom: 120px;
+}
+a {
+	@include rubicFont($mainBlue, 14px);
+	text-decoration: none;
+
+	&:hover {
+		color: $hover;
+	}
+
+	transition: color 0.5s;
+}
+.headling{
+	display: block;
+	box-sizing: border-box;
+	margin: 0 auto;
+	@include montserratFont($black, 24px)
+}
+
+.email-input{
+	margin: 20px 0;
+}
+.button{
+	width: 100%;
+	padding: 10px auto;
+	margin-top: 20px;
+}
+.forgot-your-password{
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 5px;
+}
+.register-link{
+	margin-left: 10px;
+}
+
+.social-media-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px
+}
+.social-media{
+	display: flex;
+	gap: 20px
+}
+.error-message{
+	text-align: center;
+	width: auto;
+}
+

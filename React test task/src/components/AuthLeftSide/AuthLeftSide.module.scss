@@ -1,0 +1,41 @@
+@import  '../../index.module.scss';
+
+.left-side-wrapper{
+	width: 576px;
+	margin: 20px
+}
+
+.heading{
+	@include montserratFont($mainBlue, 15px);
+	span{
+		box-sizing: border-box;
+		padding: 4px 15px;
+		color: $white;
+		background-color: $mainBlue;
+		border-radius: 4px;
+	}
+	h1{
+		margin: 0;
+	}
+	margin-bottom: 42px;
+}
+.description{
+	display: flex;
+	width: 320px;
+	padding: 10px 20px;
+	align-items: flex-start;
+	background-color: $blue40illustrate;
+	border-radius: 4px;
+	border: 2px solid $mainBlue;
+	@include rubicFont($mainBlue, 16px);
+}
+
+.description-one{
+	transform: rotate(-5deg);
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+.description-two {
+	transform: rotate(2deg);
+	margin-left: auto;
+}

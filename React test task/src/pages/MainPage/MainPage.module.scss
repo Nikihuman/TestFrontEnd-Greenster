@@ -1,0 +1,34 @@
+@import '../../index.module.scss';
+
+.body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include rubicFont($black, 16px)
+}
+.wrapper{
+	width: 600px;
+	padding: 50px;
+	box-shadow: 3px 12px 24px 0px rgba(129, 137, 197, 0.025);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: 20px;
+	background-color: $mainBlue;
+	border-radius: 5px;
+	div{
+		background-color: $whiteGray;
+		border-radius: 5px;
+	}
+}
+.jwt, .refresh-jwt{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 15px;
+}
+
+.jwt-date{
+	padding: 15px;
+}
+

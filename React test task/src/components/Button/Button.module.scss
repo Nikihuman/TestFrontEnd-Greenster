@@ -1,0 +1,27 @@
+@import  '../../index.module.scss';
+
+.button {
+	padding: 10px 20px;
+	border-radius: 100px;
+	box-sizing: border-box;
+	cursor: pointer;
+	border: 2px solid $mainBlue;
+	transition:background-color 0.5s, color 0.5s;
+};
+
+.primary{
+	@include rubicFont ($white, 16px);
+	background-color: $mainBlue;
+	&:hover {
+		background-color: $hover;
+	}
+}
+
+.secondary {
+	@include rubicFont ($mainBlue, 16px);
+	background-color: $white;
+	&:hover {
+		background-color: $hover;
+		color: $white;
+	}
+}

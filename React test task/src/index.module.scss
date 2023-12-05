@@ -1,0 +1,27 @@
+$mainBlue: #5E66A7;
+$black: #161618;
+$blue40illustrate: #E7E7FF66;
+$gray: #A1A1A1;
+$hover: #9098D9;
+$pressed: #2C3475;
+$white: #FEFEFF;
+$whiteBlue: #E7E7FF;
+$whiteGray: #B6B6BB;
+
+@mixin rubicFont ($color, $font-size, $font-weight: 400){
+	font-family: 'Rubic', sans-serif;
+	font-size: $font-size;
+	color: $color;
+	font-weight: $font-weight;
+}
+
+@mixin montserratFont ($color, $font-size, $font-weight: 600) {
+	font-family: 'Montserrat', sans-serif;
+		font-size: $font-size;
+		color: $color;
+		font-weight: $font-weight;
+}
+
+body {
+	margin: 0 auto;
+}

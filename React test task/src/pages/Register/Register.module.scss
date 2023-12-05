@@ -1,0 +1,63 @@
+@import '../../index.module.scss';
+
+.register-form {
+	width: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+	box-shadow: 3px 12px 24px 0px rgba(129, 137, 197, 0.20);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 120px;
+}
+
+.headling {
+	display: block;
+	box-sizing: border-box;
+	margin: 0 auto;
+	@include montserratFont($black, 24px)
+}
+.radio-wrapper{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	span{
+		@include montserratFont($black, 16px);
+		text-align: center;
+	}
+	.input-radio-wrapper{
+		@include rubicFont($black, 16px);
+		display: flex;
+		justify-content: center;
+		input{
+			margin: 1px 3px 2px 20px;
+		}
+		}
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.login-link{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 5px;
+	span{
+		@include rubicFont($gray, 16px);
+	}
+}
+
+.error-message {
+	text-align: center;
+	width: auto;
+	color: $gray;
+}
+
+.registerErrorMessage{
+	word-wrap: break-word;
+}
