@@ -17,7 +17,7 @@ interface IPayload {
 	user_type: string
 }
 
-export function MainPage () {
+function MainPage () {
 	const {jwt, refreshJwt} = useSelector((s: RootState)=>s.user);
 	const [payload, setPayload] = useState<IPayload | undefined>();
 	const dispatch = useDispatch<AppDispatch>();
@@ -65,3 +65,5 @@ export function MainPage () {
 		</div>
 	);
 }
+
+export default MainPage;

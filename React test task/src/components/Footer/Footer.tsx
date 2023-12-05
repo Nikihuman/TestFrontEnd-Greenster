@@ -8,7 +8,8 @@ export function Footer ({className, ...props}: FooterProps){
 		<footer className={cn(className ,styles['footer'])} {...props}>
 			<div className={cn(styles['wrapper'])}>
 				<img className={cn(styles['logo'])} src='../../LogoSecondary.svg' alt="Logo"/>
-				<div className={cn(styles['company-Ul'])}>О компании
+				<div className={cn(styles['company-Ul'])}>
+					О компании
 					<ul> 
 						<li><Link to='#'>О нас</Link></li>
 						<li><Link to='#'>Найти репетитора</Link></li>
@@ -35,13 +36,15 @@ export function Footer ({className, ...props}: FooterProps){
 						</ul>
 					</div>
 				</div>
-				<div className={cn(styles['contact-Ul'])}>Связаться с нами
+				<div className={cn(styles['contact-Ul'])}>
+					Связаться с нами
 					<ul>
 						<li><Link to='#'>asktutor24@gmail.com</Link></li>
 					</ul>
 				</div>
 			</div>
 			<div className={cn(styles['privacy-policy'])}>
+				<div className={cn(styles['no-image'])}></div>
 				<Link to='#'>Условия использования</Link>
 				<Link className={cn(styles['link-privacy-policy'])}to='#'>Политика конфиденциальности</Link>
 				<Link to='#'>© 2021-2022 All rights reserved</Link>

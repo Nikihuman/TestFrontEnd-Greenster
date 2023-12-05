@@ -6,33 +6,16 @@
 .center-wrapper{
 	box-sizing: border-box;
 	width: 100%;
-	padding: 0 130px;
+	padding: 0 9vw;
 	margin-top: 80px;
 	display: flex;
 	justify-content: space-between;
 }
 
 @media screen and (max-width: 1120px) {
-	.auth-left-side{
-		display: none;
-	}
 	.center-wrapper{
 		justify-content: center;
-		
-	}
-}
-@media screen and (max-width: 1290px) {
-	.center-wrapper {
-		padding: 0 50px;
-	}
-
-	.header {
-		padding: 0 50px;
-	}
-	.auth-left-side{
-		width: 400px;
-	}
-	.footer{
-		padding: 50px;
+		align-items: center;
+		flex-direction:column-reverse;
 	}
 }
